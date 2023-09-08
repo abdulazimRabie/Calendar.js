@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="CSS/all.min.css"></link>
+  <link rel="stylesheet" href="CSS/style.css"></link>
+</head>
+<body>
+  
+  <div id="container">
+    <div id="header">
+      <div id="monthDisplay"></div>
+
+      <div>
+        <button id="backButton"><i class="fa-solid fa-arrow-left"></i> Back</button>
+        <button id="nextButton">Next <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+
+    </div>
+
+    <div id="weekdays">
+      <div>Sunday</div>
+      <div>Monday</div>
+      <div>Tuesday</div>
+      <div>Wednesday</div>
+      <div>Thursday</div>
+      <div>Friday</div>
+      <div>Saturday</div>
+    </div>
+
+    <div id="calendar"></div>
+  </div>
+
+  <div id="newEventModal">
+    <h2>New Event</h2>
+    <input type="text" id="eventTitleInput" placeholder="New Event">
+
+    <div>
+      <button id="saveButton">Save</button>
+      <button id="cancelButton">Cancel</button>
+    </div>
+  </div>
+
+  <div id="deleteEventModal">
+    <h2>Event</h2>
+    <p id="eventTitle"></p>
+
+    <button id="deleteButton">Delete</button>
+    <button id="closeButton">Close</button>
+  </div>
+
+  <div id="modalBackDrop"></div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
