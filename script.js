@@ -1,3 +1,4 @@
+
 let nav = 0;
 let clicked = null;
 let events = localStorage.getItem('events') ? JSON.parse(localStorage.getItem('events')) : [];
@@ -75,7 +76,9 @@ function load() {
       daySquare.addEventListener('click', () => openModal(dayString));;
     } 
     else {
+      let lastDate = new Date(year, month, 0).getDate() - paddingDays;
       daySquare.classList.add("padding");
+      daySquare.innerText = lastDate + i;
     }
 
     calendar.appendChild(daySquare);
